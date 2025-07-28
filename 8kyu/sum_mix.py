@@ -94,21 +94,34 @@
 #     print(count)
 #     average =total/count
 # print(round(average))
-heights =input("enter the heights of the list:")
-my_list = heights.split(",")
+# heights =input("enter the heights of the list:")
+# my_list = heights.split(",")
+# count =0
+# for height in my_list:
+#     count+=1
+# print(count)
+# for i in range(count):
+#     my_list[i]=int(my_list[i])
+
+# print(my_list)
+
+# total =0
+# for i in my_list:
+#     total+=i
+# print(total)
+# print(count)
+# avg = total/count
+# print(round(avg))
+# Find maximum number from the given List
+my_list = input("Enter the numbers:")
+actual = my_list.split(",")
 count =0
-for height in my_list:
+for n in actual:
     count+=1
-print(count)
 for i in range(count):
-    my_list[i]=int(my_list[i])
-
-print(my_list)
-
-total =0
-for i in my_list:
-    total+=i
-print(total)
-print(count)
-avg = total/count
-print(round(avg))
+     actual[i]=int(actual[i])
+max_value=actual[0]
+for i in actual:
+    if i>max_value:
+        max_value=i
+print(max_value)
