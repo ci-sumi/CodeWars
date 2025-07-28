@@ -46,20 +46,69 @@
 # my_list[choice1][choice2]="*"
 # for row in my_list:
 #     print(row)
-import random
-computer=['Rock','Scissors','Paper']
-computer_results=random.choice(computer)
-print(computer_results)
-user_choice = input("Enter your choices 'Rock','Scissors','Paper':")
-print(user_choice)
-if computer_results==user_choice:
-    print("draw")
+# import random
+# computer=['Rock','Scissors','Paper']
+# computer_results=random.choice(computer)
+# print(computer_results)
+# user_choice = input("Enter your choices 'Rock','Scissors','Paper':")
+# print(user_choice)
+# if computer_results==user_choice:
+#     print("draw")
 
-elif (user_choice=='Rock'and computer_results=='Scissors') or\
-     (user_choice=='Paper'and computer_results=='Rock') or\
-     (user_choice=='Scissors'and computer_results=='Paper'):
-    print("user wins")       
-else:
-    print("computer wins")
-    
-    
+# elif (user_choice=='Rock'and computer_results=='Scissors') or\
+#      (user_choice=='Paper'and computer_results=='Rock') or\
+#      (user_choice=='Scissors'and computer_results=='Paper'):
+#     print("user wins")       
+# else:
+#     print("computer wins")
+#program to calculate average height from the list
+# l1=[60,40]
+# total =0
+# my_list = len(l1)
+# for i in l1:
+#     total+=i
+# average = total//my_list
+# print(average)
+# myList= input("enter the numers of list:")
+# actual_list=myList.split(",")
+# list1 =[]
+# list1.append(myList)
+# print(list1)
+
+# total =0
+# for i in actual_list:
+#     total+=int(i)
+# my_length = len(actual_list)
+# print(my_length)
+# print(total)
+# my_list_heights =input("Enter the list:")
+# actual_list = my_list_heights.split(",")
+# count =0
+# for height in actual_list:
+#     count+=1
+# print(count)
+# total=0
+# for i in range(len(actual_list)):
+#     actual_list[i]= int(actual_list[i])
+#     total+=i
+#     print(count)
+#     average =total/count
+# print(round(average))
+heights =input("enter the heights of the list:")
+my_list = heights.split(",")
+count =0
+for height in my_list:
+    count+=1
+print(count)
+for i in range(count):
+    my_list[i]=int(my_list[i])
+
+print(my_list)
+
+total =0
+for i in my_list:
+    total+=i
+print(total)
+print(count)
+avg = total/count
+print(round(avg))
