@@ -113,15 +113,28 @@
 # avg = total/count
 # print(round(avg))
 # Find maximum number from the given List
-my_list = input("Enter the numbers:")
-actual = my_list.split(",")
-count =0
-for n in actual:
-    count+=1
-for i in range(count):
-     actual[i]=int(actual[i])
-max_value=actual[0]
-for i in actual:
-    if i>max_value:
-        max_value=i
-print(max_value)
+# my_list = input("Enter the numbers:")
+# actual = my_list.split(",")
+# count =0
+# for n in actual:
+#     count+=1
+# for i in range(count):
+#      actual[i]=int(actual[i])
+# max_value=actual[0]
+# for i in actual:
+#     if i>max_value:
+#         max_value=i
+# print(max_value)
+# total=0
+# for i in range(1,101):
+#     total+=i
+# print(total)
+#calculate sum of even numbers from 1 to 100 including 1 and 100
+# sum=0
+# for i in range(1,101):
+#     if i%2==0:
+#         sum+=i
+# print(sum)
+        
+    
+    
