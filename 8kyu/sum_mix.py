@@ -185,16 +185,34 @@
 # for name,mark in student_marks.items():
 #     grade = get_grade(mark)
 #     print(f"{name}:{mark}->{grade}")
-student_data=[{"Name":"Ram","roll_no":10,"age":20,"course":"Python"}]
-def add_student_datat(name,rollno,age,course):
-    student={
-        "name":name,
-        "rollno":rollno,
-        "age":age,
-        "course":course
-    }
+# student_data=[{"Name":"Ram","roll_no":10,"age":20,"course":"Python"}]
+# def add_student_datat(name,rollno,age,course):
+#     student={
+#         "name":name,
+#         "rollno":rollno,
+#         "age":age,
+#         "course":course
+#     }
     
-    student_data.append(student)
-    return student_data
+#     student_data.append(student)
+#     return student_data
     
-print(add_student_datat("sumi",1121,37,'python'))
+# print(add_student_datat("sumi",1121,37,'python'))
+my_dictionary ={}
+
+def myinfo(name,price):
+    my_dictionary[name]=price
+while True:
+    name =input("Enter your name:")
+    price=int(input("Enter your bidding amount:"))
+    myinfo(name,price)
+    another = input("do u want to add another bidder yes/no").lower()
+    if another!='yes':
+        break
+    
+
+print(my_dictionary)
+max_bidder = max(my_dictionary,key=my_dictionary.get)
+print(max_bidder)
+
+
