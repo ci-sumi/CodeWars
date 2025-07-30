@@ -137,13 +137,22 @@
 # print(sum)
         
 #Fizz Buzz
-for i in range(1,101):
-    if i%3==0 and i%5==0:
-        print("fizzbuzz")
-    elif i%5==0:
-         print("buzz")
-    elif i%3==0:
-         print("fizz")
-    else:
-        print(i)
-    
+# for i in range(1,101):
+#     if i%3==0 and i%5==0:
+#         print("fizzbuzz")
+#     elif i%5==0:
+#          print("buzz")
+#     elif i%3==0:
+#          print("fizz")
+#     else:
+#         print(i)
+# Prime number or not
+def prime_number(n1):
+    if n1<=1:
+        return False
+    for i in range(2,int(n1+1)):
+        if n1%i==0:
+            return False
+    return True
+        
+print(prime_number(3))
