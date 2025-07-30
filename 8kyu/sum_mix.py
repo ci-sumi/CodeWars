@@ -198,21 +198,48 @@
 #     return student_data
     
 # print(add_student_datat("sumi",1121,37,'python'))
-my_dictionary ={}
+# my_dictionary ={}
 
-def myinfo(name,price):
-    my_dictionary[name]=price
-while True:
-    name =input("Enter your name:")
-    price=int(input("Enter your bidding amount:"))
-    myinfo(name,price)
-    another = input("do u want to add another bidder yes/no").lower()
-    if another!='yes':
-        break
+# def myinfo(name,price):
+#     my_dictionary[name]=price
+# while True:
+#     name =input("Enter your name:")
+#     price=int(input("Enter your bidding amount:"))
+#     myinfo(name,price)
+#     another = input("do u want to add another bidder yes/no").lower()
+#     if another!='yes':
+#         break
     
 
-print(my_dictionary)
-max_bidder = max(my_dictionary,key=my_dictionary.get)
-print(max_bidder)
+# print(my_dictionary)
+# max_bidder = max(my_dictionary,key=my_dictionary.get)
+# print(max_bidder)
+
+def leap_year(year):
+    return  (year%4==0 and year%100!=0) or (year%400==0)
+def my_findings(year,month):
+    leap=leap_year(year)
+    find_month={
+        "january": 31,
+        "february": 29 if leap_year else 28,
+        "march": 31,
+        "april": 30,
+        "may": 31,
+        "june": 30,
+        "july": 31,
+        "august": 31,
+        "september": 30,
+        "october": 31,
+        "november": 30,
+        "december": 31
+    }
+    return find_month.get(month,"invalid")
+
+
+year = int(input("enter the year:"))
+month = input("Enter the month:").lower()
+result = my_findings(year,month)
+print(result)
+
 
 
