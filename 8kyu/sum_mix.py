@@ -156,33 +156,45 @@
 #     return True
         
 # print(prime_number(3))
-student_marks = {
-    "Alice": 85,
-    "Bob": 92,
-    "Charlie": 78,
-    "David": 88,
-    "Esha": 95
-}
+# student_marks = {
+#     "Alice": 85,
+#     "Bob": 92,
+#     "Charlie": 78,
+#     "David": 88,
+#     "Esha": 95
+# }
 
-def get_grade(mark):
-    if 90<=mark<=100:
-        return "A+"
-    elif 81<=mark<=89:
-        return "A"
-    elif 71<=mark<=80:
-        return "B+"
-    elif 61<=mark<=70:
-        return "B"
-    elif 51<=mark<=60:
-        return "C"
-    elif 51<=mark<=40:
-        return "B"
-    else:
-        return "F"
+# def get_grade(mark):
+#     if 90<=mark<=100:
+#         return "A+"
+#     elif 81<=mark<=89:
+#         return "A"
+#     elif 71<=mark<=80:
+#         return "B+"
+#     elif 61<=mark<=70:
+#         return "B"
+#     elif 51<=mark<=60:
+#         return "C"
+#     elif 51<=mark<=40:
+#         return "B"
+#     else:
+#         return "F"
     
     
     
-for name,mark in student_marks.items():
-    grade = get_grade(mark)
-    print(f"{name}:{mark}->{grade}")
-        
+# for name,mark in student_marks.items():
+#     grade = get_grade(mark)
+#     print(f"{name}:{mark}->{grade}")
+student_data=[{"Name":"Ram","roll_no":10,"age":20,"course":"Python"}]
+def add_student_datat(name,rollno,age,course):
+    student={
+        "name":name,
+        "rollno":rollno,
+        "age":age,
+        "course":course
+    }
+    
+    student_data.append(student)
+    return student_data
+    
+print(add_student_datat("sumi",1121,37,'python'))
