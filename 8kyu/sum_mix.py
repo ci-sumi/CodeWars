@@ -147,12 +147,42 @@
 #     else:
 #         print(i)
 # Prime number or not
-def prime_number(n1):
-    if n1<=1:
-        return False
-    for i in range(2,int(n1+1)):
-        if n1%i==0:
-            return False
-    return True
+# def prime_number(n1):
+#     if n1<=1:
+#         return False
+#     for i in range(2,int(n1+1)):
+#         if n1%i==0:
+#             return False
+#     return True
         
-print(prime_number(3))
+# print(prime_number(3))
+student_marks = {
+    "Alice": 85,
+    "Bob": 92,
+    "Charlie": 78,
+    "David": 88,
+    "Esha": 95
+}
+
+def get_grade(mark):
+    if 90<=mark<=100:
+        return "A+"
+    elif 81<=mark<=89:
+        return "A"
+    elif 71<=mark<=80:
+        return "B+"
+    elif 61<=mark<=70:
+        return "B"
+    elif 51<=mark<=60:
+        return "C"
+    elif 51<=mark<=40:
+        return "B"
+    else:
+        return "F"
+    
+    
+    
+for name,mark in student_marks.items():
+    grade = get_grade(mark)
+    print(f"{name}:{mark}->{grade}")
+        
