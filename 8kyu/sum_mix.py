@@ -243,29 +243,77 @@
 
 # print('+\n-\n*\n%\n')
 # operation = input("Choose an operation:")
-number1 = int(input("Enter the first number:"))
-while True:
-    def add(*numbers):
-        c= number1+number2
-        return c
-    number2 = int(input("Enter next number:"))
-    result = add()
-    print(f"{number1}+{number2}={result}")
-    input1 = input(f" Enter 'y' to continue calculationwith {result} or 'n' to start new calculation or x to exit:")
-    if input1=='n':
-         break
-    elif input1=='y':
-        number1=result
-        add(result)
-    else:
-         break
+# number1 = int(input("Enter the first number:"))
+# while True:
+#     def add(*numbers):
+#         c= number1+number2
+#         return c
+#     number2 = int(input("Enter next number:"))
+#     result = add()
+#     print(f"{number1}+{number2}={result}")
+#     input1 = input(f" Enter 'y' to continue calculationwith {result} or 'n' to start new calculation or x to exit:")
+#     if input1=='n':
+#          break
+#     elif input1=='y':
+#         number1=result
+#         add(result)
+#     else:
+#          break
      
 
-result = add()
+# result = add()
+# import random
+# dice_numbers=["one","Two","Three","Four","Five","Six"]
+# dice_num = random.randint(0,5)
+# result = dice_numbers[dice_num]
+# print(result)
+import random
+data = [
+    {"name": "Python", "rating": 95},
+    {"name": "JavaScript", "rating": 90},
+    {"name": "Java", "rating": 85},
+    {"name": "C++", "rating": 80},
+    {"name": "C#", "rating": 78},
+    {"name": "Go", "rating": 70},
+    {"name": "Ruby", "rating": 65},
+    {"name": "Swift", "rating": 75},
+    {"name": "PHP", "rating": 60},
+    {"name": "Rust", "rating": 82}
+]
+print("Please rate your favorite programming language:")
+
+def guess():
+    guess = random.choice(data)
+    guess1 = random.choice(data)
+    print(guess['name'])
+    print(guess1['name'])
+    combined = {'option_1': guess, 'option_2': guess1}
+    # use_input=input("Enter your choice")
+    # print(combined)
+    max_rating=0
+    language =''
+    for highestrating in combined.values():
+        if highestrating['rating']>max_rating:
+            max_rating=highestrating['rating']
+            # print(max_rating)
+            language=highestrating['name']
+                
+    print(f"{language} has {max_rating}")
+    
+
+    
+    
+    
+guess()
 
 
 
 
+   
+
+    
+    
+    
 
 
 
